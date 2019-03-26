@@ -146,10 +146,10 @@ function fish_vi_key_bindings --description 'vi-like key bindings for fish'
     bind -s --preset dB backward-kill-bigword
     bind -s --preset dge backward-kill-word
     bind -s --preset dgE backward-kill-bigword
-    bind -s --preset df begin-selection forward-jump kill-selection end-selection
-    bind -s --preset dt begin-selection forward-jump backward-char kill-selection end-selection
+    bind -s --preset df begin-selection forward-jump forward-char kill-selection end-selection
+    bind -s --preset dt begin-selection forward-jump kill-selection end-selection
     bind -s --preset dF begin-selection backward-jump kill-selection end-selection
-    bind -s --preset dT begin-selection backward-jump forward-char kill-selection end-selection
+    bind -s --preset dT begin-selection backward-jump-till kill-selection end-selection
 
     bind -s --preset -m insert s delete-char force-repaint
     bind -s --preset -m insert S kill-whole-line force-repaint
